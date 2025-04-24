@@ -6,11 +6,20 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "nodemon app.mjs"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/minoLMW/x.git"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/minoLMW/x/issues"
+  },
+  "homepage": "https://github.com/minoLMW/x#readme",
   "description": "",
   "dependencies": {
-    "express": "^5.1.0"
+    "express": "^5.1.0",
+    "nodemon": "^3.1.10"
   }
 }
