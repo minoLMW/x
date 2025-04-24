@@ -1,4 +1,3 @@
-import e from "express";
 import * as authRepository from "../data/auth.mjs";
 
 export async function signup(req, res, next) {
@@ -13,6 +12,7 @@ export async function login(req, res, next) {
   const { userid, password } = req.body;
   const user = await authRepository.login(userid, password);
   if (user) {
+    req.session.user = { userid: user.userid, name: user.name }; // ✅ 세션 저장
     res.status(200).json(`${userid}님 로그인 완료!`);
   } else {
     res
