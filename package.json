@@ -6,25 +6,19 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "nodemon app.mjs"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/minoLMW/x.git"
-  },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/minoLMW/x/issues"
-  },
-  "homepage": "https://github.com/minoLMW/x#readme",
   "description": "",
+  "devDependencies": {
+    "nodemon": "^3.1.10"
+  },
   "dependencies": {
     "bcrypt": "^5.1.1",
     "dotenv": "^16.5.0",
     "express": "^5.1.0",
     "express-validator": "^7.2.1",
     "jsonwebtoken": "^9.0.2",
-    "mysql2": "^3.14.1",
-    "nodemon": "^3.1.10"
+    "mysql2": "^3.14.1"
   }
 }
