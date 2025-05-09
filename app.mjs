@@ -16,7 +16,7 @@ app.use((req, res, next) => {
 });
 
 connectDB()
-.then(() => {
-  app.listen(config.host.port);
-})
-.catch(console.error)
+  .then(() => {
+    app.listen(config.host.port);
+  })
+  .catch(console.error);
